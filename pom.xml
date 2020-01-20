@@ -572,8 +572,21 @@
             </plugin>
         </plugins>
     </reporting>
-    
+
     <repositories>
+        <repository>
+            <id>nexus_public</id>
+            <url>http://maven.tuhu.work:8081/nexus/content/groups/public/</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>nexus_public</id>
+            <url>http://maven.tuhu.work:8081/nexus/content/groups/public/</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <!--<repositories>
         <repository>
             <id>alfresco-maven-repo</id>
             <url>https://maven.alfresco.com/nexus/content/groups/public/</url>
@@ -598,7 +611,7 @@
                 <enabled>false</enabled>
             </releases>
         </repository>
-    </repositories>
+    </repositories>-->
     
     <url>https://github.com/elasticjob/elastic-job</url>
     <licenses>
